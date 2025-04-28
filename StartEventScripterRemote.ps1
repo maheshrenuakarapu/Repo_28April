@@ -54,7 +54,7 @@ $block = {
     $task_name = "EventScripter"
     $toolLocation  = "C:\eterra\Distribution\Client\bin\EventScripter.exe"
     $scriptLocation = "C:\Users\Administrator\Documents\Event_Scripts\FI_AllCustomers_5_script.xml"
-    $netconfLocation = "C:\eterra\Distribution\FantasyIsland\config\client\netconfes_EC2AMAZ-081HM05.xml"
+    $netconfLocation = "C:\eterra\Distribution\FantasyIsland\config\client\netconfes_EC2AMAZ-B4T5BNM.xml"
 
         
     $proc = get-process -Name $task_name -ErrorAction SilentlyContinue
