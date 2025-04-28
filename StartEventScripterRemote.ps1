@@ -1,4 +1,4 @@
-$filePath = "C:\StartEventScripterRemote\ActiveHostMapping.txt"
+$filePath = ".\ActiveHostMapping.txt"
 
 $machines = Get-Content -Path $filePath | Select-Object -First 1
 
@@ -35,9 +35,9 @@ Test-Connection -ComputerName $ipAddress -Count 2
 
 C:\StartEventScripterRemote\addLog.ps1 -logToWrite "Copying Event Scripter file $eventScriptFile to $hostname..."
 
-$eventScriptFile = "FI_AllCustomers_20_script.xml"
+$eventScriptFile = "FI_AllCustomers_5_script.xml"
 
-$test_script = "C:\Users\Administrator\Documents\UIScripts\$eventScriptFile"
+$test_script = "C:\Users\Administrator\Documents\Event_Scripts\$eventScriptFile"
 
 #$remoteSession = New-PSSession $hostName -Credential $Credential
 #$remoteLocation = "C:\Users\Administrator\Documents\UIScripts"
@@ -53,7 +53,7 @@ $block = {
 
     $task_name = "EventScripter"
     $toolLocation  = "C:\eterra\Distribution\Client\bin\EventScripter.exe"
-    $scriptLocation = "C:\Users\Administrator\Documents\FI_AllCustomers_20_script.xml"
+    $scriptLocation = "C:\Users\Administrator\Documents\Event_Scripts\FI_AllCustomers_5_script.xml"
     $netconfLocation = "C:\eterra\Distribution\FantasyIsland\config\client\netconfes_EC2AMAZ-081HM05.xml"
 
         
